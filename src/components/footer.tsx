@@ -5,7 +5,7 @@ export function Footer() {
         <p className="font-sans text-xs text-muted">
           &copy; {new Date().getFullYear()} Demian Reidel
         </p>
-        <p className="font-sans text-xs text-muted/50">
+        <p className="font-sans text-xs text-muted/40">
           Buenos Aires &middot; New York
         </p>
       </div>

@@ -8,8 +8,11 @@ import { Research } from "@/components/research";
 import { PublicService } from "@/components/public-service";
 import { Media } from "@/components/media";
 import { Art } from "@/components/art";
+import { Kitchen } from "@/components/kitchen";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import { CustomCursor } from "@/components/custom-cursor";
+import { ScrollProgress } from "@/components/scroll-progress";
 import { useFadeUp } from "@/components/use-fade-up";
 
 export default function Home() {
@@ -17,6 +20,8 @@ export default function Home() {
 
   return (
     <>
+      <CustomCursor />
+      <ScrollProgress />
       <Nav />
       <main>
         <Hero />
@@ -26,6 +31,7 @@ export default function Home() {
         <PublicService />
         <Media />
         <Art />
+        <Kitchen />
         <Contact />
       </main>
       <Footer />

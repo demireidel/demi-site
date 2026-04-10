@@ -1,15 +1,15 @@
 export function About() {
   return (
-    <section id="about" className="py-[120px] max-md:py-20 px-6">
+    <section id="about" className="py-[140px] max-md:py-24 px-6">
       <div className="mx-auto max-w-[1200px]">
         <div className="fade-up">
-          <h2 className="font-display text-5xl max-md:text-4xl text-ivory mb-2">
+          <h2 className="font-display text-[clamp(3rem,8vw,7rem)] text-ivory mb-1 leading-[0.95] clip-reveal">
             THE ARC
           </h2>
-          <div className="h-[1px] w-16 bg-gold mb-12" />
+          <div className="h-[1px] w-16 bg-gold mb-14 gold-line" />
         </div>
 
-        <div className="mx-auto max-w-[780px] space-y-6 font-serif text-lg leading-[1.7] text-ivory/90">
+        <div className="mx-auto max-w-[780px] space-y-6 font-serif text-[clamp(1.05rem,1.8vw,1.2rem)] leading-[1.8] text-ivory/90">
           <p className="fade-up">
             Demian Reidel trained as a physicist at Argentina&rsquo;s Instituto
             Balseiro before crossing into financial mathematics at the University
@@ -21,6 +21,14 @@ export function About() {
             intellectual project: understanding how complex systems behave at
             scale.
           </p>
+
+          {/* Pull quote */}
+          <blockquote className="fade-up my-12 max-md:my-8">
+            <p className="pull-quote text-[clamp(1.6rem,4vw,2.8rem)] text-gold leading-[1.2]">
+              &ldquo;What makes large-scale productive systems viable, and what
+              destroys them?&rdquo;
+            </p>
+          </blockquote>
 
           <p className="fade-up">
             That project has played out across three domains. In global finance,
@@ -50,11 +58,11 @@ export function About() {
           </p>
         </div>
 
-        <div className="fade-up mt-12 text-center">
-          <p className="font-sans text-sm uppercase tracking-[0.2em] text-muted">
+        <div className="fade-up mt-14 text-center">
+          <p className="font-sans text-[10px] uppercase tracking-[0.3em] text-muted">
             Languages
           </p>
-          <p className="mt-2 font-serif text-lg text-ivory/80">
+          <p className="mt-2 font-serif text-lg text-ivory/70">
             Spanish &middot; English &middot; Chinese (Mandarin) &middot; Italian &middot; French
           </p>
         </div>

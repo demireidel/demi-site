@@ -33,26 +33,30 @@ const links = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-[120px] max-md:py-20 px-6">
+    <section id="contact" className="py-[140px] max-md:py-24 px-6">
       <div className="mx-auto max-w-[1200px]">
         <div className="fade-up">
-          <h2 className="font-display text-5xl max-md:text-4xl text-ivory mb-2">
+          <h2 className="font-display text-[clamp(3rem,8vw,7rem)] text-ivory mb-1 leading-[0.95]">
             CONTACT
           </h2>
-          <div className="h-[1px] w-16 bg-gold mb-12" />
+          <div className="h-[1px] w-16 bg-gold mb-12 gold-line" />
         </div>
 
-        <div className="fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[780px]">
+        <div className="fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[780px]">
           {links.map((l) => (
-            <div key={l.label}>
-              <p className="font-sans text-xs font-semibold uppercase tracking-[0.25em] text-muted mb-1">
+            <div key={l.label} className="group">
+              <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.3em] text-muted mb-1.5">
                 {l.label}
               </p>
               <a
                 href={l.href}
                 target={l.href.startsWith("mailto") ? undefined : "_blank"}
-                rel={l.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-                className="font-serif text-base text-gold hover:text-ivory transition-colors"
+                rel={
+                  l.href.startsWith("mailto")
+                    ? undefined
+                    : "noopener noreferrer"
+                }
+                className="font-serif text-base text-gold hover:text-ivory transition-colors duration-300"
               >
                 {l.display}
               </a>
