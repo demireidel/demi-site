@@ -53,42 +53,50 @@ const record = [
     years: "1997—2006",
     title: "Emerging markets",
     institution: "JPMorgan / Goldman Sachs",
-    detail: "Sovereign risk, currencies, rates, credit, and macroeconomic research across global markets.",
+    detail:
+      "Sovereign risk, currencies, rates, credit, and macroeconomic research across global markets.",
     source: "https://jrc.princeton.edu/events/demian-reidel",
   },
   {
     years: "2006—2015",
     title: "Co-founder & portfolio manager",
     institution: "QFR Capital Management",
-    detail: "Built a global macro investment firm that exceeded $3 billion in assets under management during his tenure.",
+    detail:
+      "Built a global macro investment firm that exceeded $3 billion in assets under management during his tenure.",
     source: "https://jrc.princeton.edu/events/demian-reidel",
   },
   {
     years: "2015—2018",
     title: "Second Vice President & board member",
     institution: "Central Bank of Argentina",
-    detail: "Monetary policy, prudential oversight, and representation at the G20 and Financial Stability Board.",
+    detail:
+      "Monetary policy, prudential oversight, and representation at the G20 and Financial Stability Board.",
     source: "https://jrc.princeton.edu/events/demian-reidel",
   },
   {
     years: "2024—2025",
     title: "Head of presidential advisers",
     institution: "Argentine Republic",
-    detail: "Strategic work across economic policy, technology, international relationships, and energy.",
-    source: "https://www.boletinoficial.gob.ar/detalleAviso/primera/309982/20240703",
+    detail:
+      "Strategic work across economic policy, technology, international relationships, and energy.",
+    source:
+      "https://www.boletinoficial.gob.ar/detalleAviso/primera/309982/20240703",
   },
   {
     years: "2025—2026",
     title: "President",
     institution: "Nucleoeléctrica Argentina",
-    detail: "Led the national nuclear operator during the launch and early execution of the Argentine Nuclear Plan.",
-    source: "https://www.iaea.org/sites/default/files/25/05/day_3_transition_to_a_sustainable_future_with_nuclear_mr_demian_reidel.pdf",
+    detail:
+      "Led the national nuclear operator during the launch and early execution of the Argentine Nuclear Plan.",
+    source:
+      "https://www.iaea.org/sites/default/files/25/05/day_3_transition_to_a_sustainable_future_with_nuclear_mr_demian_reidel.pdf",
   },
   {
     years: "2026—",
     title: "Founder",
     institution: "Siderian",
-    detail: "Building an industrial coordination system for repeatable advanced nuclear deployment at scale.",
+    detail:
+      "Building an industrial coordination system for repeatable advanced nuclear deployment at scale.",
     source: "https://siderian.energy/founder",
   },
 ] as const;
@@ -109,7 +117,7 @@ export default function Home() {
           <div className="hero-topline">
             <p>Demian Reidel</p>
             <p>Systems at scale</p>
-            <p>Science / Capital / Infrastructure</p>
+            <p>Science / Capital / State / Infrastructure</p>
           </div>
 
           <div className="hero-name" aria-label="Demian Reidel">
@@ -194,7 +202,9 @@ export default function Home() {
 
           <div className="current-grid">
             <div className="current-copy">
-              <p className="micro-label" data-reveal>Founder / Siderian</p>
+              <p className="micro-label" data-reveal>
+                Founder / Siderian
+              </p>
               <h2 data-reveal>
                 Industrialize the deployment of advanced nuclear power.
               </h2>
@@ -213,7 +223,11 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="coordination-map" aria-label="Siderian coordination model" data-reveal>
+            <div
+              className="coordination-map"
+              aria-label="Siderian coordination model"
+              data-reveal
+            >
               <div className="coordination-core">
                 <span>S</span>
                 <small>Deployment layer</small>
@@ -284,7 +298,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="research" className="research section-shell" data-section="Research">
+        <section
+          id="research"
+          className="research section-shell"
+          data-section="Research"
+        >
           <div className="section-kicker" data-reveal>
             <span>03</span>
             <p>Research / July 2026</p>
@@ -292,11 +310,15 @@ export default function Home() {
 
           <div className="research-heading">
             <div>
-              <p className="micro-label" data-reveal>Working paper / exact computation</p>
+              <p className="micro-label" data-reveal>
+                Working paper / exact computation
+              </p>
               <h2 data-reveal>Minimum Viable Scale</h2>
             </div>
             <div data-reveal>
-              <p className="research-subtitle">Threshold Wedges and Global Selection</p>
+              <p className="research-subtitle">
+                Threshold Wedges and Global Selection
+              </p>
               <p>Javier Milei · Demian Reidel</p>
             </div>
           </div>
@@ -319,14 +341,14 @@ export default function Home() {
               <span>Explore the paper</span>
               <Arrow />
             </a>
-            <a className="button-link is-quiet" href="/papers/minimum-viable-scale.pdf">
-              <span>Read PDF</span>
-              <span aria-hidden="true">↓</span>
-            </a>
           </div>
         </section>
 
-        <section id="record" className="record section-shell" data-section="Selected record">
+        <section
+          id="record"
+          className="record section-shell"
+          data-section="Selected record"
+        >
           <div className="section-kicker" data-reveal>
             <span>04</span>
             <p>Selected record</p>
@@ -342,7 +364,9 @@ export default function Home() {
           <ol className="record-list">
             {record.map((item, index) => (
               <li key={`${item.years}-${item.institution}`} data-reveal>
-                <span className="record-count">{String(index + 1).padStart(2, "0")}</span>
+                <span className="record-count">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
                 <time>{item.years}</time>
                 <div>
                   <h3>{item.title}</h3>
@@ -365,7 +389,10 @@ export default function Home() {
           </ol>
         </section>
 
-        <section className="human section-shell" data-section="Other systems">
+        <section
+          className="human section-shell"
+          data-section="Other systems"
+        >
           <div className="section-kicker" data-reveal>
             <span>05</span>
             <p>Other systems</p>
@@ -387,15 +414,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="contact section-shell" data-section="Contact">
+        <section
+          id="contact"
+          className="contact section-shell"
+          data-section="Contact"
+        >
           <div className="section-kicker" data-reveal>
             <span>06</span>
             <p>Contact</p>
           </div>
 
-          <h2 data-reveal>
-            THE NEXT SYSTEM STARTS WITH A CONVERSATION.
-          </h2>
+          <h2 data-reveal>THE NEXT SYSTEM STARTS WITH A CONVERSATION.</h2>
 
           <div className="contact-grid" data-reveal>
             <a href="mailto:demian@demianreidel.com">
@@ -408,7 +437,11 @@ export default function Home() {
               <strong>@dreidel1</strong>
               <Arrow />
             </a>
-            <a href="https://www.linkedin.com/in/demianreidel" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/demianreidel"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>LinkedIn</span>
               <strong>demianreidel</strong>
               <Arrow />
