@@ -1,0 +1,45 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 508 >>
+stream
+BT
+/F1 18 Tf
+72 760 Td
+(Minimum Viable Scale) Tj
+0 -24 Td (Threshold Wedges and Global Selection) Tj
+0 -24 Td (Javier Milei / Demian Reidel) Tj
+0 -24 Td (July 2026 working paper) Tj
+0 -24 Td () Tj
+0 -24 Td (This repository contains the interactive essay and website treatment.) Tj
+0 -24 Td (Replace this placeholder with the canonical sealed PDF before public launch.) Tj
+0 -24 Td () Tj
+0 -24 Td (Key hierarchy: Lavg_min, Lmg_min, kappa, K_S, K*.) Tj
+0 -24 Td (Core result: viability is not selection.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000246 00000 n 
+0000000316 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+875
+%%EOF
