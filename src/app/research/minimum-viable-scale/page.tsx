@@ -10,7 +10,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/research/minimum-viable-scale" },
 };
 
-const hierarchy = [
+type HierarchyItem = {
+  index: string;
+  symbol: string;
+  title: string;
+  text: string;
+  global?: boolean;
+};
+
+const hierarchy: readonly HierarchyItem[] = [
   {
     index: "01",
     symbol: "Lᵃᵛᵍₘᵢₙ",
@@ -42,7 +50,7 @@ const hierarchy = [
     title: "Selected stationary scale",
     text: "Where does the high-scale path ultimately converge?",
   },
-] as const;
+];
 
 const amplification = [
   {
