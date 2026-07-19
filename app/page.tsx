@@ -9,7 +9,7 @@ const scales = [
 
 const work = [
   { index: "01", status: "CURRENT · FOUNDING STAGE", title: "Industrial assurance for nuclear deployment", body: "A system for making repeat reactor deployment more legible to customers, suppliers, regulators, and capital.", meta: "SIDERIAN · 2026—", href: "https://siderian.energy/", link: "Visit Siderian" },
-  { index: "02", status: "WORKING PAPER · SUBMITTED TO ECONOMETRICA", title: "Minimum viable scale", body: "Research on the welfare frontier between extinction and growth, and a first-passage Bellman-barrier certificate for all-optimizer regime selection.", meta: "RESEARCH · AUGUST 2026", href: "/public/PaperJMDR", link: "Explore the paper" },
+  { index: "02", status: "WORKING PAPER · SUBMITTED TO ECONOMETRICA", title: "Minimum viable scale", body: "Research on the welfare frontier between extinction and growth, and a first-passage Bellman-barrier certificate for all-optimizer regime selection.", meta: "RESEARCH · AUGUST 2026", href: "/Public/PaperJMDR", link: "Explore the paper" },
   { index: "03", status: "COMPLETED TENURE · 2015—2018", title: "Monetary policy and institutional normalization", body: "Work as a director and Second Vice President of Argentina's central bank, including monetary policy and international financial coordination.", meta: "BCRA · G20", href: "https://www.argentina.gob.ar/normativa/nacional/decreto-89-2015-256841/texto", link: "Primary record" },
   { index: "04", status: "HISTORICAL · PRIVATE MARKETS", title: "Capital allocation under uncertainty", body: "From emerging-market research to co-founding QFR, where quantitative structure met judgment, risk, and the discipline of consequences.", meta: "J.P. MORGAN · GOLDMAN SACHS · QFR", href: "https://www.hks.harvard.edu/centers/mrcbg/students/sg/reidel.2019.spring", link: "Institutional biography" },
 ];
@@ -102,7 +102,7 @@ export default function Home() {
         <div className="section-index dark-index"><span>04</span><span>Ideas</span></div>
         <div className="ideas-heading"><p className="eyebrow">Proof of mind</p><h2>Questions that connect the work across time.</h2></div>
         <div className="ideas-list">{ideas.map((idea, index) => <article className="idea-row" key={idea.title}><span className="idea-number">0{index + 1}</span><div><p className="idea-label">{idea.label}</p><h3>{idea.title}</h3></div><p className="idea-body">{idea.body}</p><span className="idea-arrow" aria-hidden="true">↗</span></article>)}</div>
-        <div className="working-paper"><div><span className="status-chip paper-chip"><i /> Working paper</span><p>August 2026 · Submitted to Econometrica</p></div><h3>Minimum Viable Scale and First-Passage Bellman Barriers</h3><p>A formal characterization of the welfare frontier between extinction and growth, with an exact certificate for all-optimizer regime selection.</p><a className="paper-state" href="/public/PaperJMDR">Read &amp; download ↗</a></div>
+        <div className="working-paper"><div><span className="status-chip paper-chip"><i /> Working paper</span><p>August 2026 · Submitted to Econometrica</p></div><h3>Minimum Viable Scale and First-Passage Bellman Barriers</h3><p>A formal characterization of the welfare frontier between extinction and growth, with an exact certificate for all-optimizer regime selection.</p><a className="paper-state" href="/Public/PaperJMDR">Read &amp; download ↗</a></div>
       </section>
 
       <section className="archive-section dark-section" id="archive">
