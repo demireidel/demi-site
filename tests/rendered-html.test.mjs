@@ -44,8 +44,11 @@ test("server-renders the canonical paper page", async () => {
   assert.match(html, /rel="canonical" href="https:\/\/demianreidel\.com\/Public\/PaperJMDR"/i);
   assert.match(html, /https:\/\/demianreidel\.com\/PaperJMDR\/paper-og\.png/i);
   assert.match(html, /Submitted to Econometrica/i);
-  assert.match(html, /Physical viability and optimal preservation are different thresholds\./i);
-  assert.match(html, /Four cases cover every feasible lifetime history\./i);
+  assert.match(html, /Possible is not the same as optimal\./i);
+  assert.match(html, /One welfare frontier classifies every optimizer\./i);
+  assert.match(html, /Paths starting in M ∪ H/i);
+  assert.match(html, /0 &lt; K₀ ≤ κ/i);
+  assert.match(html, /This method supplies one high-side certificate\. It does not locate Kₛ/i);
   assert.match(html, /href="\/PaperJMDR\/Minimum_Viable_Scale_Main\.pdf"/i);
   assert.doesNotMatch(html, /<canvas\b|particle|electric|glow/i);
 });
